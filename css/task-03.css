@@ -1,0 +1,23 @@
+.gallery{
+list-style-type: none;
+padding-left: 0;
+}
+
+.list-item {
+    margin-left: 0;
+}
+.list-item:not(:last-child) {
+    margin-bottom: 5vmin;
+}
+.gallery-image {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 3vmin;
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
+}
+.gallery-image:focus,
+.gallery-image:hover {
+    transform: scale(1.1);
+}
